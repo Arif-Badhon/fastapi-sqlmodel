@@ -34,3 +34,4 @@ with Session(engine) as session:
     statement = select(Hero).where(Hero.name == "Dr Strange")
     hero = session.exec(statement).first()
     print(hero)
+
